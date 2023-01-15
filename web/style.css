@@ -1,0 +1,38 @@
+.menu-item-7141:after{
+	content: "\f09a";
+	font-family: "Font Awesome 5 Brands";
+	color: #262F36;
+	position: absolute;
+	top: 13px;
+	left: 20px;
+	pointer-events: none;
+}
+
+.menu-item-7141 a{
+	color: #eaeaea !important;
+}
+
+
+.menu-item-7141 a:hover{
+	color: #eaeaea !important;
+}
+
+/**Pribehy */
+
+.premium-blog-post-container:not(.premium-blog-skin-classic):not(.premium-blog-skin-side):not(.premium-blog-skin-banner) .premium-blog-content-wrapper{
+    margin: 0;
+}
+
+
+.premium-blog-post-container.premium-blog-skin-modern{
+    border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.elementor-12 .elementor-element.elementor-element-9bb5f51 .premium-blog-post-container{
+    background-color: transparent;
+}
+
+.premium-blog-even .premium-blog-post-container{
+    height: 95%;
+}
