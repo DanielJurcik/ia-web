@@ -1,3 +1,21 @@
+/*****************************/
+/*          COLORS           */
+/*****************************/
+:root {
+    --primary-color: #E60000;
+    --secondary-color: #E6BF00;
+    --third-color: #404040;
+
+    --text-color: #222;
+    --headline-color: #222;
+
+    --gradient-color: linear-gradient(90deg, rgba(230,0,0,1) 0%, rgba(230,191,0,1) 100%);
+    --gradient-color-45:linear-gradient(45deg, rgba(230,0,0,1) 0%, rgba(230,191,0,1) 100%);
+}
+/*******************************/
+/* FB ikona v sekundárnom menu */
+/*******************************/
+
 .menu-item-7141:after{
 	content: "\f09a";
 	font-family: "Font Awesome 5 Brands";
@@ -16,8 +34,9 @@
 .menu-item-7141 a:hover{
 	color: #eaeaea !important;
 }
-
-/**Pribehy */
+/*****************************/
+/*          Pribehy          */
+/*****************************/
 
 .premium-blog-post-container:not(.premium-blog-skin-classic):not(.premium-blog-skin-side):not(.premium-blog-skin-banner) .premium-blog-content-wrapper{
     margin: 0;
@@ -37,9 +56,9 @@
     height: 95%;
 }
 
-
-/*BUTTON */
-/* Buttons styles start */
+/*****************************/
+/*   Buttons styles start    */
+/*****************************/
 .ia-btn{
 	display: inline-block;
 	border: none;
@@ -90,4 +109,38 @@
 .ia-btn:focus {
 	outline: 1px solid #fff;
 	outline-offset: -4px;
+}
+
+/*****************************/
+/*  Custom vyrez pre slider  */
+/*****************************/
+#rev_slider_2_1_wrapper::after {
+	content: "";
+	width: 100%;
+	display: block;
+	bottom: 0px;
+	right: 0;
+	position: absolute;
+	height: 100%;
+	z-index: 20;
+	background: url("http://cms.implea.gov.sk/wp-content/uploads/2023/01/ia_overlay.png") 0 0 no-repeat;
+	background-size: cover;
+	bottom: 0;
+	right: 0;
+	background-position-y: bottom;
+	background-position-x: right;
+	background-size: contain;
+	opacity: 0.6;
+}
+
+/*****************************/
+/*        AKTUALITY          */
+/*****************************/
+
+.ia-aktuality-posts .premium-blog-post-container{
+	border-top: 6px solid var(--primary-color);
+}
+
+.ia-aktuality-posts .premium-blog-even .premium-blog-post-container{
+	height: 90%;
 }
