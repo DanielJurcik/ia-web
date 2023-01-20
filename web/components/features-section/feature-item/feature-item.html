@@ -1,11 +1,13 @@
-<article class="ia-image-item">
-    <div class="ia-image-item__image-wrapper">
-        <img class="ia-image-item__image" src="https://post.healthline.com/wp-content/uploads/2020/08/young-woman-wheelchair-disabled-732x549-thumbnail.jpg" alt="">
-    </div>
-    <div class="ia-image-item__title-wrapper">
-        <h3 class="ia-image-item__title">Test</h3>
-    </div>
-</article>
+<a href="{{item.link}}">
+    <article class="ia-image-item">
+        <div class="ia-image-item__image-wrapper">
+            <img class="ia-image-item__image" src="{{item.image}}" alt="">
+        </div>
+        <div class="ia-image-item__title-wrapper">
+            <h3 class="ia-image-item__title">{{item.title}}</h3>
+        </div>
+    </article>
+</a>
 
 <style>
     .ia-image-item{
@@ -14,7 +16,7 @@
     .ia-image-item .ia-image-item__image-wrapper{
         display: flex;
         justify-content: center;
-        margin-bottom: -60px;
+        margin-bottom: -56px;
     }
 
     .ia-image-item .ia-image-item__image{
@@ -29,16 +31,17 @@
         box-sizing: border-box;
         width: 100%;
         background: #F8F8F8;
-        padding-top: 80px;
-        padding-bottom: 40px;
+        padding-top: 72px;
+        padding-bottom: 32px;
         text-align: center;
         border-radius: 15px;
         padding-inline: 24px;
     }
 
     .ia-image-item .ia-image-item__title{
-        font-size: 36px;
+        font-size: 28px;
         margin: 0;
         font-weight: 700;
+        color: var(--headline-color);
     }
 </style>

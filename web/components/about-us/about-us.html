@@ -1,24 +1,29 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 <section class="ia-custom-section ia-about-us">
-    <div class="ia-about-us__wrapper">
-        <img class="is-about-is__image" src="{{image}}" alt="">
-        <div class="ia-about-us__text-container">
+    <div class="row ia-about-us__wrapper">
+        <div class="col-md-4 ia-about-us__image-wrapper">
+            <img class="ia-about-us__image" src="{{image}}" alt="">
+        </div>
+        <div class="col-md-8 ia-about-us__text-container">
             <p class="ia-about-us__subtitle">{{subtext|raw}}</p>
             <h2 class="ia-about-us__title">{{title|raw}}</h2>
             <p class="ia-about-us__text">{{description|raw}}</p>
-            <a href=""><button class="ia-btn ia-btn-primary">{{button_text}}</button></a>
+            <a href="{{button_link}}"><button class="ia-btn ia-btn-primary">{{button_text}}</button></a>
         </div>
     </div>
 </section>
 
 <style>
     .ia-about-us{
-        padding: 40px;
+        padding-top: 56px;
+        padding-bottom: 56px;
+        padding-inline: 12px;
     }
 
     .ia-about-us .ia-about-us__wrapper{
         background: #E8E8E880;
-        display: flex;
-        padding-inline: 80px;
+        padding-inline: 18px;
         padding-top: 40px;
         padding-bottom: 40px;
         border-radius: 30px;
@@ -30,12 +35,18 @@
         justify-content: center;
     }
 
-    .ia-about-us .is-about-is__image{
+    .ia-about-us .ia-about-us__image{
         border-radius: 50%;
         width: 380px;
         height: 380px;
         object-fit: cover;
-        margin-right: 80px;
+        margin-bottom: 32px;
+        aspect-ratio: 1 / 1;
+    }
+
+    .ia-about-us .ia-about-us__image-wrapper{
+        display: flex;
+        justify-content: center;
     }
 
     .ia-about-us .ia-about-us__title{
@@ -55,7 +66,21 @@
     .ia-about-us .ia-about-us__subtitle{
         margin: 0;
         font-size: 18px;
-        color: #DA5E2C;
+        color: var(--primary-color);
         text-transform: uppercase;
     }
+
+    @media only screen and (min-width: 768px) {
+        .ia-about-us .ia-about-us__wrapper{
+            padding-inline: 80px;
+        }
+
+        .ia-about-us{
+            padding-inline: 0;
+        }
+
+        .ia-about-us__image{
+            margin-bottom: 0;
+        }
+    } 
 </style>
