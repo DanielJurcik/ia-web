@@ -1,0 +1,43 @@
+<div class="ia-date-hide-comp" data-startDate="" data-endDate="">
+    <p>Show component </p>
+</div>
+
+
+<div class="ia-date-hide-comp" data-startDate="2014-02-12" data-endDate="2024-12-01">
+    <p>Show component 2014-02-12 - 2024-12-01</p>
+</div>
+
+<div class="ia-date-hide-comp" data-startDate="2018-02-12" data-endDate="2022-12-01">
+    <p>Show component 2018-02-12 - 2022-12-01</p>
+</div>
+
+<div class="ia-date-hide-comp" data-startDate="2014-02-12" data-endDate="2023-12-02">
+    <p>Show component 2014-02-12 - 2023-12-02</p>
+</div>
+
+
+<style>
+    .d-none{
+        display: none;
+    }
+</style>
+
+
+<script>
+    const dateHideCompSele = '.ia-date-hide-comp';
+    const dateHideStartDateAtt = 'data-startDate';
+    const dateHideEndDateAtt = 'data-endDate';
+    const hideClass = 'd-none';
+
+    const hideElems = document.querySelectorAll(dateHideCompSele);
+    hideElems.forEach(element => {
+        element.classList.add(hideClass);
+        const startDate = new Date(element.getAttribute(dateHideStartDateAtt));
+        const endDate = new Date(element.getAttribute(dateHideEndDateAtt));
+        const currentDate = Date.now()
+
+        if((currentDate > startDate) && (currentDate<endDate)){
+            element.classList.remove(hideClass);
+        }
+    });
+</script>
