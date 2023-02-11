@@ -1,0 +1,94 @@
+<style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    body{
+        position: relative;
+    }
+
+    #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        filter: alpha(opacity=70);
+        -moz-opacity: 0.7;
+        -khtml-opacity: 0.7;
+        opacity: 0.7;
+        z-index: 100;
+    }
+
+    .popup {
+        width: 100%;
+        margin: 0 auto;
+        position: fixed;
+        z-index: 101;
+        top: 0;
+    }
+
+    .cnt223 {
+        border-top: 8px solid #E60000;
+        min-width: 600px;
+        width: 600px;
+        min-height: 150px;
+        margin: 100px auto;
+        background: #f3f3f3;
+        position: relative;
+        z-index: 103;
+        padding: 15px 35px;
+        border-radius: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .cnt223 p {
+        clear: both;
+        color: #555555;
+        font-size: 20px;
+    }
+
+    .cnt223 .info-text{
+        font-size: 12px;
+        color: #555555;
+    }
+
+    .cnt223 .x {
+        float: right;
+        height: 35px;
+        left: 22px;
+        position: relative;
+        top: -25px;
+        width: 34px;
+    }
+
+    .cnt223 .x:hover {
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    window.onload = function get_body() {
+
+        const bodyElem = document.querySelector("body");
+    console.log(document.body);
+    let overlay = document.createElement("div");
+    overlay.id = 'overlay';
+    bodyElem.appendChild(overlay);
+    }
+</script>
+
+<div class='popup'>
+    <div class='cnt223'>
+        <h1>Oznam</h1>
+        <hr>
+        <p>
+            Sťahujeme sa na novú adresu.
+            <br />
+            <br />
+            IA MPSVR SR sa mení na <b style="color: #E60000;">IMPLEA</b>
+        </p>
+
+        <p class="info-text">Za pár sekúnd budete presmerovaný</p>
+    </div>
+</div>
+    
