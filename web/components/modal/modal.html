@@ -1,8 +1,5 @@
 <style type="text/css">
     @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-    body{
-        position: relative;
-    }
 
     #overlay {
         position: fixed;
@@ -26,13 +23,23 @@
         top: 0;
     }
 
-    .cnt223 {
-        border-top: 8px solid #E60000;
+    .popup hr{
+        width: 40%;
+        margin: 0;
+    }
+
+    .popup-content {
         min-width: 600px;
         width: 600px;
         min-height: 150px;
         margin: 100px auto;
         background: #f3f3f3;
+
+        background-image: url('https://www.ia.gov.sk/wp-content/uploads/2023/02/ia_overlay_v2.png');
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        background-position-x: right;
+        background-size: contain;
         position: relative;
         z-index: 103;
         padding: 15px 35px;
@@ -41,54 +48,32 @@
         font-family: 'Poppins', sans-serif;
     }
 
-    .cnt223 p {
+    .popup-content p {
         clear: both;
         color: #555555;
         font-size: 20px;
     }
 
-    .cnt223 .info-text{
+    .popup-content .info-text{
         font-size: 12px;
         color: #555555;
-    }
-
-    .cnt223 .x {
-        float: right;
-        height: 35px;
-        left: 22px;
-        position: relative;
-        top: -25px;
-        width: 34px;
-    }
-
-    .cnt223 .x:hover {
-        cursor: pointer;
     }
 </style>
 
 <script>
     window.onload = function get_body() {
-
         const bodyElem = document.querySelector("body");
-    console.log(document.body);
-    let overlay = document.createElement("div");
-    overlay.id = 'overlay';
-    bodyElem.appendChild(overlay);
+        let overlay = document.createElement("div");
+        overlay.id = 'overlay';
+        bodyElem.appendChild(overlay);
     }
 </script>
 
 <div class='popup'>
-    <div class='cnt223'>
+    <div class='popup-content'>
         <h1>Oznam</h1>
         <hr>
-        <p>
-            Sťahujeme sa na novú adresu.
-            <br />
-            <br />
-            IA MPSVR SR sa mení na <b style="color: #E60000;">IMPLEA</b>
-        </p>
-
+        <p>Sťahujeme sa na novú adresu.<br/><br/>IA MPSVR SR sa mení na <b style="color: #E60000;">IMPLEA</b></p>
         <p class="info-text">Za pár sekúnd budete presmerovaný</p>
     </div>
 </div>
-    
