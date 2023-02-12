@@ -1,24 +1,57 @@
-<div class="ia-date-hide-comp" data-startDate="" data-endDate="">
-    <p>Show component </p>
+<link rel="stylesheet" href="../../style.css">
+
+
+<div class="ia-date-hide-comp" data-endDate="2022-12-01">
+    <div class="ia-job-position">
+        <div class="ia-job-position__text">
+            <h2>Kontrolór/ kontrolórka v národnom projekte Podpora a zvyšovanie kvality terénnej sociálnej práce (NP TSP II.)</h2>
+        </div>
+        <div class="ia-job-position__action">
+            <button class="ia-btn ia-btn-primary"><a href="ia-job-positon__link">Zobraziť</a></button>
+        </div>
+    </div>
 </div>
 
-
-<div class="ia-date-hide-comp" data-startDate="2014-02-12" data-endDate="2024-12-01">
-    <p>Show component 2014-02-12 - 2024-12-01</p>
+<div class="ia-date-hide-comp" data-endDate="2024-12-01">
+    <div class="ia-job-position">
+        <div class="ia-job-position__text">
+            <h2>Kontrolór/ kontrolórka v národnom projekte Podpora a zvyšovanie kvality terénnej sociálnej práce (NP TSP II.)</h2>
+        </div>
+        <div class="ia-job-position__action">
+            <button class="ia-btn ia-btn-primary"><a href="ia-job-positon__link">Zobraziť</a></button>
+        </div>
+    </div>
 </div>
 
-<div class="ia-date-hide-comp" data-startDate="2018-02-12" data-endDate="2022-12-01">
-    <p>Show component 2018-02-12 - 2022-12-01</p>
+<div class="ia-date-hide-comp" data-endDate="2024-12-01">
+    <div class="ia-job-position">
+        <div class="ia-job-position__text">
+            <h2>Kontrolór/ kontrolórka v národnom projekte Podpora a zvyšovanie kvality terénnej sociálnej práce (NP TSP II.)</h2>
+        </div>
+        <div class="ia-job-position__action">
+            <button class="ia-btn ia-btn-primary"><a href="ia-job-positon__link">Zobraziť</a></button>
+        </div>
+    </div>
 </div>
-
-<div class="ia-date-hide-comp" data-startDate="2014-02-12" data-endDate="2023-12-02">
-    <p>Show component 2014-02-12 - 2023-12-02</p>
-</div>
-
 
 <style>
-    .d-none{
-        display: none;
+
+    .ia-job-position{
+        background-color: silver;
+        padding: 32px;
+        border-radius: 15px;
+        border-top: var(--primary-color) 5px solid;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 24px;
+        gap: 24px;
+    }
+
+    .ia-job-position__text{
+        flex-basis: 600px;
+        flex-grow: 1;
     }
 </style>
 
@@ -31,13 +64,12 @@
 
     const hideElems = document.querySelectorAll(dateHideCompSele);
     hideElems.forEach(element => {
-        element.classList.add(hideClass);
         const startDate = new Date(element.getAttribute(dateHideStartDateAtt));
         const endDate = new Date(element.getAttribute(dateHideEndDateAtt));
         const currentDate = Date.now()
 
-        if((currentDate > startDate) && (currentDate<endDate)){
-            element.classList.remove(hideClass);
+        if((currentDate > endDate)){
+            element.style.display = 'none';
         }
     });
 </script>
