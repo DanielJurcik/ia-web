@@ -1,10 +1,23 @@
 <link rel="stylesheet" href="../../style.css">
 
 
+<!-- HTML ITEM - START -->
 <div class="ia-date-hide-comp" data-endDate="2022-12-01">
     <div class="ia-job-position">
         <div class="ia-job-position__text">
-            <h2>Kontrolór/ kontrolórka v národnom projekte Podpora a zvyšovanie kvality terénnej sociálnej práce (NP TSP II.)</h2>
+            <h3>Kontrolór/ kontrolórka v národnom projekte Podpora a zvyšovanie kvality terénnej sociálnej práce (NP TSP II.)</h3>
+        </div>
+        <div class="ia-job-position__action">
+            <button class="ia-btn ia-btn-primary"><a href="ia-job-positon__link">Zobraziť</a></button>
+        </div>
+    </div>
+</div>
+<!-- HTML ITEM - END -->
+
+<div class="ia-date-hide-comp" data-endDate="2024-12-01">
+    <div class="ia-job-position">
+        <div class="ia-job-position__text">
+            <h3>Kontrolór/ kontrolórka v národnom projekte Podpora a zvyšovanie kvality terénnej sociálnej práce (NP TSP II.)</h3>
         </div>
         <div class="ia-job-position__action">
             <button class="ia-btn ia-btn-primary"><a href="ia-job-positon__link">Zobraziť</a></button>
@@ -15,7 +28,7 @@
 <div class="ia-date-hide-comp" data-endDate="2024-12-01">
     <div class="ia-job-position">
         <div class="ia-job-position__text">
-            <h2>Kontrolór/ kontrolórka v národnom projekte Podpora a zvyšovanie kvality terénnej sociálnej práce (NP TSP II.)</h2>
+            <h3>Kontrolór/ kontrolórka v národnom projekte Podpora a zvyšovanie kvality terénnej sociálnej práce (NP TSP II.)</h3>
         </div>
         <div class="ia-job-position__action">
             <button class="ia-btn ia-btn-primary"><a href="ia-job-positon__link">Zobraziť</a></button>
@@ -23,21 +36,10 @@
     </div>
 </div>
 
-<div class="ia-date-hide-comp" data-endDate="2024-12-01">
-    <div class="ia-job-position">
-        <div class="ia-job-position__text">
-            <h2>Kontrolór/ kontrolórka v národnom projekte Podpora a zvyšovanie kvality terénnej sociálnej práce (NP TSP II.)</h2>
-        </div>
-        <div class="ia-job-position__action">
-            <button class="ia-btn ia-btn-primary"><a href="ia-job-positon__link">Zobraziť</a></button>
-        </div>
-    </div>
-</div>
-
+<!-- CSS ITEM - START -->
 <style>
-
     .ia-job-position{
-        background-color: silver;
+        background-color: var(--grey-color);
         padding: 32px;
         border-radius: 15px;
         border-top: var(--primary-color) 5px solid;
@@ -47,15 +49,21 @@
         align-items: center;
         margin-bottom: 24px;
         gap: 24px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     }
 
     .ia-job-position__text{
         flex-basis: 600px;
         flex-grow: 1;
     }
+
+    .ia-job-position__text h3{
+        font-size: 24px;
+    }
 </style>
+<!-- CSS ITEM - END -->
 
-
+<!-- SCRIPT - START -->
 <script>
     const dateHideCompSele = '.ia-date-hide-comp';
     const dateHideStartDateAtt = 'data-startDate';
@@ -73,3 +81,4 @@
         }
     });
 </script>
+<!-- SCRIPT - END -->
