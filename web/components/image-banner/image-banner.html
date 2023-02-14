@@ -6,15 +6,26 @@
     .ia-image-banner{
         background-size: cover;
         position: relative;
-        background: linear-gradient(45deg, rgba(230,0,0,0.6027544806985294) 0%, rgba(230,191,0,0.5971522398021709) 100%), url("{{pozadie}}");;
+        background: var(--gradient-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 156px;
     }
 
     .ia-image-banner .ia-image-banner__title{
-        padding: 32px;
-        font-size: 56px;
         font-weight: 700;
+        padding: 24px;
+        font-size: 40px;
         text-align: center;
         z-index: 1;
       	color: white;
+    }
+
+    @media (min-width: 600px) {
+        .ia-image-banner .ia-image-banner__title{
+            padding: 32px;
+            font-size: 56px;
+        }
     }
 </style>
