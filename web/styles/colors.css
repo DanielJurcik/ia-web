@@ -1,3 +1,6 @@
+/*****************************/
+/*          FARBY            */
+/*****************************/
 :root {
     --primary-color: #E60000;
     --secondary-color: #E6BF00;
@@ -8,6 +11,9 @@
     --text-color: #222;
     --headline-color: #222;
 
-    --gradient-color: linear-gradient(90deg, rgba(230,0,0,1) 0%, rgba(230,191,0,1) 100%);
+    --background-light-color: #E8E8E880;
+
+    
+    --gradient-color: linear-gradient(340deg, var( --primary-color) 15%, var( --secondary-color ) 100%);
     --gradient-color-45:linear-gradient(45deg, rgba(230,0,0,1) 0%, rgba(230,191,0,1) 100%);
 }

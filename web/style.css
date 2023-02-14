@@ -1,5 +1,5 @@
 /*****************************/
-/*          COLORS           */
+/*          FARBY            */
 /*****************************/
 :root {
     --primary-color: #E60000;
@@ -11,51 +11,99 @@
     --text-color: #222;
     --headline-color: #222;
 
-    --gradient-color: linear-gradient(90deg, rgba(230,0,0,1) 0%, rgba(230,191,0,1) 100%);
+    --background-light-color: #E8E8E880;
+
+    
+    --gradient-color: linear-gradient(340deg, var( --primary-color) 15%, var( --secondary-color ) 100%);
     --gradient-color-45:linear-gradient(45deg, rgba(230,0,0,1) 0%, rgba(230,191,0,1) 100%);
+
 }
+
+/*****************************/
+/*  Custom vyrez pre slider  */
+/*****************************/
+#rev_slider_2_1_wrapper::after {
+	content: "";
+	width: 100%;
+	display: block;
+	bottom: 0px;
+	right: 0;
+	position: absolute;
+	height: 100%;
+	z-index: 20;
+	background: url("/wp-content/uploads/2023/02/ia_overlay_v2.png") 0 0 no-repeat;
+	bottom: 0;
+	right: 0;
+	background-position-y: bottom;
+	background-position-x: right;
+	background-size: contain;
+	opacity: 0.6;
+}
+
 /*******************************/
 /* FB ikona v sekundárnom menu */
 /*******************************/
 
-.menu-item-7141:after{
+.menu-item.fb-menu-item:before{
 	content: "\f09a";
 	font-family: "Font Awesome 5 Brands";
-	color: #262F36;
+	color: #4267B2;
 	position: absolute;
 	top: 13px;
 	left: 20px;
 	pointer-events: none;
+	font-size: 22px;
+}
+.menu-item.yt-menu-item:before{
+	content: "\f167";
+	font-family: "Font Awesome 5 Brands";
+	color: #FF0000;
+	position: absolute;
+	top: 13px;
+	left: 20px;
+	pointer-events: none;
+	font-size: 22px;
 }
 
-.menu-item-7141 a{
-	color: #eaeaea !important;
+.fb-menu-item a,
+.yt-menu-item a{
+	color: transparent !important;
 }
 
-
-.menu-item-7141 a:hover{
-	color: #eaeaea !important;
+.fb-menu-item a:hover,
+.yt-menu-item a:hover{
+	color: transparent !important;
 }
 /*****************************/
 /*          Pribehy          */
 /*****************************/
 
 .premium-blog-post-container:not(.premium-blog-skin-classic):not(.premium-blog-skin-side):not(.premium-blog-skin-banner) .premium-blog-content-wrapper{
-    margin: 0;
+	margin: 0;
 }
 
-
 .premium-blog-post-container.premium-blog-skin-modern{
-    border-radius: 15px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	border-radius: 15px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .elementor-12 .elementor-element.elementor-element-9bb5f51 .premium-blog-post-container{
-    background-color: transparent;
+	background-color: transparent;
 }
 
-.premium-blog-even .premium-blog-post-container{
-    height: 95%;
+body .premium-blog-even .premium-blog-post-container{
+	height: 95%;
+}
+
+.premium-blog-even .premium-blog-excerpt-link-wrap{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.premium-blog-even .premium-blog-content-wrapper{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 /*****************************/
@@ -77,15 +125,16 @@ a.ia-btn, .ia-btn{
 	transition: 0.2s ease-in-out;
 	border-radius: 30px;
 	padding: 7px 30px 7px 30px;
+	font-weight: bold;
 	text-transform: uppercase;
 	text-decoration: none;
 }
 
 .ia-btn.ia-btn-primary {
-	background: #F14B05;
+	background: var(--primary-color);
 	color: #ffffff;
-	border: 3px solid #F14B05;
-	background-color: #F14B05;
+	border: 3px solid var(--primary-color);
+	background-color: var(--primary-color);
 }
 
 .ia-btn.ia-btn-secondary{
@@ -98,15 +147,15 @@ a.ia-btn, .ia-btn{
 .ia-btn-secondary:hover,
 .ia-btn-secondary:focus {
 	border: 3px solid #ffffff;
-	background-color: #F14B05;
+	background-color: var(--primary-color);
 	color: #ffffff;
 }
 
 .ia-btn-primary:hover,
 .ia-btn-primary:focus {
-	border: 3px solid #F14B05;
+	border: 3px solid var(--primary-color);
 	background-color: transparent;
-	color: #F14B05;
+	color: var(--primary-color);
 }
 
 .ia-btn:focus {
@@ -115,35 +164,141 @@ a.ia-btn, .ia-btn{
 }
 
 /*****************************/
-/*  Custom vyrez pre slider  */
-/*****************************/
-#rev_slider_2_1_wrapper::after {
-	content: "";
-	width: 100%;
-	display: block;
-	bottom: 0px;
-	right: 0;
-	position: absolute;
-	height: 100%;
-	z-index: 20;
-	background: url("http://cms.implea.gov.sk/wp-content/uploads/2023/01/ia_overlay.png") 0 0 no-repeat;
-	background-size: cover;
-	bottom: 0;
-	right: 0;
-	background-position-y: bottom;
-	background-position-x: right;
-	background-size: contain;
-	opacity: 0.6;
-}
-
-/*****************************/
 /*        AKTUALITY          */
 /*****************************/
 
 .ia-aktuality-posts .premium-blog-post-container{
-	border-top: 6px solid var(--primary-color);
+	border-top: 12px solid var(--primary-color);
 }
 
 .ia-aktuality-posts .premium-blog-even .premium-blog-post-container{
-	height: 90%;
+	height: 93%;
+}
+
+.ia-aktuality-posts .premium-blog-entry-title{
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.ia-aktuality-posts .premium-blog-excerpt-link-wrap{
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 12px;
+}
+
+.ia-aktuality-posts .premium-blog-content-wrapper .premium-blog-post-content{
+	max-height: 150px;
+	overflow: hidden;
+}
+
+
+.ia-pribehy-posts .premium-blog-content-wrapper .premium-blog-post-content{
+	max-height: 100px;
+	overflow: hidden;
+}
+
+body .premium-blog-post-container:not(.premium-blog-skin-classic):not(.premium-blog-skin-side):not(.premium-blog-skin-banner) .premium-blog-content-wrapper{
+	margin: unset;
+}
+
+/*****************************/
+/*          FARBY            */
+/*****************************/
+.mainmenu-area{
+	border-color: var(--primary-color);
+}
+
+/*Header*/
+.elementor-section.elementor-top-section.elementor-element.elementor-element-9c213dc.elementor-section-full_width.elementor-section-height-default{
+	border-color: var(--primary-color);
+}
+
+.elementor-12 .elementor-element.elementor-element-598f90c > .elementor-widget-container{
+	background: transparent;
+}
+
+.call-to-action-center::before, .call-to-action-corner::before {
+	background: unset;
+}
+
+.call-to-action-center:hover::before, .call-to-action-corner:hover::before {
+	background: unset;
+}
+
+.elementor-section-wrap .elementor-section, .elementor-column-gap-default > .elementor-column > .elementor-element-populated{
+	padding: unset;
+}
+
+/*Datum pri clanku*/
+.single-blog-post .date-box .comment{
+	display: none;
+}
+
+.single-blog-post .date-box .inner{
+	width: 50px !important;
+}
+
+.single-blog-post .date-box .inner .date{
+	font-size: 14px;
+	background: var(--background-light-color);
+	border-radius: 5px;
+	color: var(--text-color);
+}
+
+.single-blog-post .date-box .inner .date b{
+	font-size: 16px;
+	color: var(--text-color);
+}
+
+/*****************************/
+/* Stranky projektov */
+/*****************************/
+
+.elementor-widget-charityhome_about_us_v2 .row{
+	background: var(--background-light-color);
+	padding: 24px;
+	border-radius: 30px;
+	overflow: hidden;
+	
+}
+
+.elementor-widget-charityhome_about_us_v2 .sec-title.style-two::after {
+	content: "";
+	width: 44%;
+	height: 10px;
+	position: absolute;
+	background: var(--gradient-color);
+}
+
+.elementor-widget-charityhome_about_us_v2 .about-content.full-sec h3{
+	font-size: 20px;
+	line-height: 1.3em;
+	margin-bottom: 16px;
+	margin-top: 40px;
+	color: var(--primary-color);
+}
+
+.elementor-widget-charityhome_about_us_v2 .sec-title .decor{
+	display: none;
+}
+
+.elementor-widget-charityhome_about_us_v2 .about-content img{
+	border-radius: 8px;
+}
+
+.elementor-widget:not(:last-child){
+	margin: 0;
+}
+
+/*****************************/
+/*          FONTS            */
+/*****************************/
+h2,h3,h4,h5{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+/*Fix pracovne ponuky komponent*/
+.eael-call-to-action .content{
+	width: 100%;
 }
