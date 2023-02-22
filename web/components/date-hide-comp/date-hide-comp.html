@@ -2,13 +2,14 @@
 
 
 <!-- HTML ITEM - START -->
-<div class="ia-date-hide-comp" data-endDate="2023-01-03">
+<div class="ia-date-hide-comp" data-endDate="{{date_end}}">
+    <p class="ia-date-hide-comp__time">Ponuka platná do : <b>{{date_end}}</b></p>
     <div class="ia-job-position">
         <div class="ia-job-position__text">
-            <h3> AAA Kontrolór/ kontrolórka v národnom projekte Podpora a zvyšovanie kvality terénnej sociálnej práce (NP TSP II.)</h3>
+            <h3>{{text|raw}}</h3>
         </div>
         <div class="ia-job-position__action">
-            <a class="ia-btn ia-btn-primary" href="ia-job-positon__link">Zobraziť</a>
+            <a class="ia-btn ia-btn-primary" href="{{button_link}}">{{button_text|raw}}</a>
         </div>
     </div>
 </div>
@@ -40,16 +41,31 @@
 <style>
     .ia-job-position{
         background-color: #F8F8F8;
-        padding: 32px;
+        padding: 48px;
+        padding-inline: 30px;
+        padding-left: 60px;
         border-radius: 15px;
-        border-top: var(--primary-color) 5px solid;
+        border-top: var(--primary-color) 12px solid;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         margin-bottom: 24px;
-        gap: 24px;
+        gap: 80px;
     }
+
+    .elementor-editor-active .ia-date-hide-comp{
+        display: block !important;
+    }
+
+    .elementor-editor-active .ia-date-hide-comp__time{
+        display: block;
+    }
+
+    .ia-date-hide-comp__time{
+        display: none;
+    }
+
 
     .ia-job-position__text{
         flex-basis: 600px;
@@ -57,8 +73,32 @@
     }
 
     .ia-job-position__text h3{
+        font-weight: 400;
+    }
+
+    .ia-job-position__text h3{
         font-size: 20px;
     }
+
+    @media (max-width: 768px) {
+        .ia-job-position{
+            padding: 30px;
+            gap: 24px;
+        }
+
+        .ia-job-position .ia-job-position__text{        
+            text-align: center;
+        }
+    }
+
+
+    /* REMOVE AFTER */
+        .ia-job-position .ia-job-position__text h3{
+            font-family: "Roboto Condensed", sans-serif;
+            font-size: 19.2px;
+            line-height: 28.8px;
+        }
+    /* REMOVE AFTER - end */
 </style>
 <!-- CSS ITEM - END -->
 
@@ -67,7 +107,6 @@
     const dateHideCompSele = '.ia-date-hide-comp';
     const dateHideStartDateAtt = 'data-startDate';
     const dateHideEndDateAtt = 'data-endDate';
-    const hideClass = 'd-none';
 
     const hideElems = document.querySelectorAll(dateHideCompSele);
     hideElems.forEach(element => {

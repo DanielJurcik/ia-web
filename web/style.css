@@ -12,6 +12,8 @@
 	--headline-color: #222;
 
 	--background-light-color: #E8E8E880;
+	--white-color: #FFFFFF;
+	--black-color: #000000;
 
 	
 	--gradient-color: linear-gradient(340deg, var( --primary-color) 15%, var( --secondary-color ) 100%);
@@ -422,4 +424,44 @@ h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5{
 .elementor-heading-title{
 	margin-bottom: 0.75em;
 	line-height: 1.4em;
+}
+
+/*****************************/
+/*  CLANKY BUTTONS A FARBY   */
+/*****************************/
+
+.premium-blog-wrap .premium-blog-excerpt-link-wrap .premium-blog-excerpt-link.elementor-button{
+	font-family: "Roboto", sans-serif !important;
+	background-color: var(--white-color) !important;
+	color: var(--primary-color) !important;
+	border: 3px solid var(--primary-color) !important;
+}
+
+.premium-blog-wrap .premium-blog-excerpt-link-wrap .premium-blog-excerpt-link.elementor-button:hover{
+	background-color: var(--primary-color) !important;
+	color: var(--white-color) !important;
+}
+
+.premium-blog-wrap .premium-blog-entry-title a{
+	font-family: "Roboto", sans-serif !important;
+}
+
+.premium-blog-wrap .premium-blog-post-time span{
+	font-family: "Roboto", sans-serif !important;
+	color: var(--primary-color) !important;
+}
+
+.premium-blog-wrap .premium-blog-post-time i{
+	color: var(--primary-color) !important;
+}
+
+.elementor-widget-container .premium-blog-pagination-container .page-numbers{
+	font-family: "Roboto", sans-serif !important;
+	background-color: var(--primary-color) !important;
+}
+
+.elementor-widget-container .premium-blog-pagination-container .page-numbers:hover,
+.elementor-widget-container .premium-blog-pagination-container .page-numbers.current
+{
+	background-color: var(--secondary-color) !important;
 }

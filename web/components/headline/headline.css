@@ -1,0 +1,34 @@
+.ia-headline-comp__text{
+    display: inline-block;
+}
+
+.ia-headline-comp__text::after{
+    content: '';
+    display: block;
+    margin-top: 12px;
+    height: 10px;
+    background: var(--gradient-color);
+}
+
+.ia-headline-comp.yes{
+    padding: 24px;
+    padding-inline: 39px;
+    border-radius: 16px;
+    background-color: var(--background-light-color);
+    margin-bottom: 16px;
+}
+
+.ia-headline-comp .ia-headline-comp__text{
+    margin-bottom: 0;
+}
+
+
+.ia-headline-comp .ia-headline-comp__text + p{
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.ia-headline-comp{
+    margin-bottom: 24px;
+}

@@ -1,7 +1,88 @@
 /*****************************/
 /*          FONTS            */
 /*****************************/
-h2,h3,h4,h5{
-    margin-top: 16px;
-    margin-bottom: 16px;
+body{
+    font-family: 'Roboto', sans-serif;
 }
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5{
+    margin-bottom: 1em;
+    line-height: 1.4em;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5{
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 500;
+}
+
+/** FONT SETTINGS - start **/
+.h1,h1{
+    font-size:24px;
+}
+@media (min-width:768px){
+    .h1,h1{
+        font-size:28px
+    }
+}
+@media (min-width:992px){
+    .h1,h1{
+        font-size:34px;
+    }
+}
+.h2,h2{
+    font-size:20px;
+}
+@media (min-width:768px){
+    .h2,h2{
+        font-size:20px;
+    }
+}
+@media (min-width:992px){
+    .h2,h2{
+        font-size:24px;
+    }
+}
+.h3,h3{
+    font-size:18px;
+}
+@media (min-width:768px){
+    .h3,h3{
+        font-size:18px;
+    }
+}
+@media (min-width:992px){
+    .h3,h3{
+        font-size:20px;
+    }
+}
+/*-----------------------------*/
+.h4,h4{
+    font-size:20px;
+}
+@media (min-width:768px){
+    .h4,h4{
+        font-size:20px;
+    }
+}
+@media (min-width:992px){
+    .h4,h4{
+        font-size:24px;
+    }
+}
+.h5,h5{
+    font-size:18px;
+}
+@media (min-width:768px){
+    .h5,h5{
+        font-size:18px;
+    }
+}
+@media (min-width:992px){
+    .h5,h5{
+        font-size:20px;
+    }
+}
+/*****************************/
+/*      FONTS - end          */
+/*****************************/
