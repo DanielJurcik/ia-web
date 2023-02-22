@@ -2,20 +2,20 @@
 /*          FARBY            */
 /*****************************/
 :root {
-    --primary-color: #E60000;
-    --secondary-color: #E6BF00;
-    --third-color: #404040;
+	--primary-color: #E60000;
+	--secondary-color: #E6BF00;
+	--third-color: #404040;
 
-    --grey-color:#E8E8E880;
+	--grey-color:#E8E8E880;
 
-    --text-color: #222;
-    --headline-color: #222;
+	--text-color: #222;
+	--headline-color: #222;
 
-    --background-light-color: #E8E8E880;
+	--background-light-color: #E8E8E880;
 
-    
-    --gradient-color: linear-gradient(340deg, var( --primary-color) 15%, var( --secondary-color ) 100%);
-    --gradient-color-45:linear-gradient(45deg, rgba(230,0,0,1) 0%, rgba(230,191,0,1) 100%);
+	
+	--gradient-color: linear-gradient(340deg, var( --primary-color) 15%, var( --secondary-color ) 100%);
+	--gradient-color-45:linear-gradient(45deg, rgba(230,0,0,1) 0%, rgba(230,191,0,1) 100%);
 
 }
 
@@ -124,6 +124,7 @@ a.ia-btn, .ia-btn{
 	margin-top: 8px;
 	transition: 0.2s ease-in-out;
 	border-radius: 30px;
+	line-height: 19.5px;
 	padding: 7px 30px 7px 30px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -201,6 +202,23 @@ body .premium-blog-post-container:not(.premium-blog-skin-classic):not(.premium-b
 	margin: unset;
 }
 
+.ia-aktuality-posts h2 a{
+	font-family: 'Poppins', sans-serif !important;
+	font-size: 16px;
+	line-height: 1.3em;
+	display: block;
+	margin-bottom: 8px
+}
+
+
+.ia-pribehy-posts h2 a{
+	font-family: 'Poppins', sans-serif !important;
+	font-size: 16px;
+	line-height: 1.3em;
+	display: block;
+	margin-bottom: 8px
+}
+
 /*****************************/
 /*          FARBY            */
 /*****************************/
@@ -236,6 +254,7 @@ body .premium-blog-post-container:not(.premium-blog-skin-classic):not(.premium-b
 
 .single-blog-post .date-box .inner{
 	width: 50px !important;
+	margin-top: 11px;
 }
 
 .single-blog-post .date-box .inner .date{
@@ -290,15 +309,117 @@ body .premium-blog-post-container:not(.premium-blog-skin-classic):not(.premium-b
 	margin: 0;
 }
 
+
+.sec-title h2{
+	font-size:24px;
+	font-weight: 500;
+}
+@media (min-width:768px){
+	.sec-title h2{
+		font-size:28px
+	}
+}
+@media (min-width:992px){
+	.sec-title h2{
+		font-size:34px;
+	}
+}
+
 /*****************************/
 /*          FONTS            */
 /*****************************/
-h2,h3,h4,h5{
-    margin-top: 16px;
-    margin-bottom: 16px;
+body{
+    font-family: 'Roboto', sans-serif;
 }
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5{
+    margin-bottom: 1em;
+    line-height: 1.4em;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5{
+	font-family: 'Poppins', sans-serif !important;
+	font-weight: 500;
+}
+
+/** FONT SETTINGS - start **/
+.h1,h1{
+	font-size:24px;
+}
+@media (min-width:768px){
+	.h1,h1{
+		font-size:28px
+	}
+}
+@media (min-width:992px){
+	.h1,h1{
+		font-size:34px;
+	}
+}
+.h2,h2{
+	font-size:20px;
+}
+@media (min-width:768px){
+	.h2,h2{
+		font-size:20px;
+	}
+}
+@media (min-width:992px){
+	.h2,h2{
+		font-size:24px;
+	}
+}
+.h3,h3{
+	font-size:18px;
+}
+@media (min-width:768px){
+	.h3,h3{
+		font-size:18px;
+	}
+}
+@media (min-width:992px){
+	.h3,h3{
+		font-size:20px;
+	}
+}
+/*-----------------------------*/
+.h4,h4{
+	font-size:20px;
+}
+@media (min-width:768px){
+	.h4,h4{
+		font-size:20px;
+	}
+}
+@media (min-width:992px){
+	.h4,h4{
+		font-size:24px;
+	}
+}
+.h5,h5{
+	font-size:18px;
+}
+@media (min-width:768px){
+	.h5,h5{
+		font-size:18px;
+	}
+}
+@media (min-width:992px){
+	.h5,h5{
+		font-size:20px;
+	}
+}
+/*****************************/
+/*      FONTS - end          */
+/*****************************/
 
 /*Fix pracovne ponuky komponent*/
 .eael-call-to-action .content{
 	width: 100%;
+}
+
+.elementor-heading-title{
+	margin-bottom: 0.75em;
+	line-height: 1.4em;
 }
