@@ -1,0 +1,82 @@
+.ia-vyzva-comp{
+    color: var(--text-color);
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-inline: 15px;
+}
+
+.ia-vyzva-comp h1,
+.ia-vyzva-comp h2,
+.ia-vyzva-comp h3,
+.ia-vyzva-comp h4,
+.ia-vyzva-comp h5{
+    margin: 0;
+}
+
+.ia-vyzva-comp .ia-vyzva-comp__wrapper{
+    background: var(--background-light-color);
+    padding-inline: 18px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-radius: 15px;
+    border-top: transparent 12px solid;
+  	margin: 0;
+}
+
+.ia-vyzva-comp .ia-vyzva-comp__text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ia-vyzva-comp .ia-vyzva-comp__image{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    aspect-ratio: 1 / 1;
+    background: white;
+    padding: 0;
+    margin-bottom: 32px;
+}
+
+.ia-vyzva-comp .ia-vyzva-comp__image-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ia-vyzva-comp .ia-vyzva-comp__title{
+    font-size: 32px;
+    margin-bottom: 8px;
+    margin-top: 0px;
+}
+
+.ia-vyzva-comp .ia-vyzva-comp__text{
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.ia-vyzva-comp .ia-btn-secondary{
+    margin-top: 24px;
+}
+
+.ia-vyzva-comp .ia-vyzva-comp__subtitle{
+    margin: 0;
+    font-size: 16px;
+    color: var(--ia-primary-color);
+}
+
+@media only screen and (min-width: 768px) {
+    .ia-vyzva-comp .ia-vyzva-comp__wrapper{
+        padding-inline: 24px;
+    }
+
+    .ia-vyzva-comp{
+        padding-inline: 0px;
+    }
+
+    .ia-vyzva-comp .ia-vyzva-comp__image{
+        margin-bottom: 0;
+    }
+}

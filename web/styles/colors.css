@@ -13,7 +13,11 @@
 
     --background-light-color: #E8E8E880;
 
+	--white-color: #FFFFFF;
+	--black-color: #000000;
     
-    --gradient-color: linear-gradient(340deg, var( --primary-color) 15%, var( --secondary-color ) 100%);
+    --gradient-color: linear-gradient(340deg, var(--ia-primary-color) 15%, var(--secondary-color) 100%);
     --gradient-color-45:linear-gradient(45deg, rgba(230,0,0,1) 0%, rgba(230,191,0,1) 100%);
+
+    --ia-primary-color: #E60000;
 }

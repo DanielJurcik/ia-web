@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="vyzva-comp.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<section class="ia-custom-section ia-vyzva-comp" >
+    <div class="row ia-vyzva-comp__wrapper" style="border-color: {{farba_projektu}};">
+        <div class="col-md-3 ia-vyzva-comp__image-wrapper">
+            <img class="ia-vyzva-comp__image" src="{{image}}" alt="">
+        </div>
+        <div class="col-md-9 ia-vyzva-comp__text-container">
+            <p class="ia-vyzva-comp__oznam">{{oznamenie|raw}}</p>
+            <p class="ia-vyzva-comp__text">{{description|raw}}</p>
+            <p class="ia-vyzva-comp__text">Realizuje: <a href="{{link_projekt}}" target="_blank">{{projekt_text|raw}}</a></p>
+        </div>
+    </div>
+</section>

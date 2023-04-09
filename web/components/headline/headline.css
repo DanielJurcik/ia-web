@@ -2,9 +2,11 @@
     display: inline-block;
 }
 
-/* .ia-headline-comp{
-    margin-top: 50px;
-} */
+.ia-headline-comp{
+    margin-top: 48px;
+    margin-bottom: 32px;
+  	padding-inline: 15px;
+}
 
 hr.ia-headline-comp__divider{
     display: block;
@@ -17,10 +19,9 @@ hr.ia-headline-comp__divider{
 
 .ia-headline-comp.yes{
     padding: 24px;
-    padding-inline: 39px;
+    padding-inline: 16px;
     border-radius: 16px;
     background-color: var(--background-light-color);
-    margin-bottom: 16px;
 }
 
 .ia-headline-comp .ia-headline-comp__text{
@@ -33,13 +34,12 @@ hr.ia-headline-comp__divider{
     font-weight: 500;
 }
 
-.ia-headline-comp{
-    margin-bottom: 24px;
-  	padding-inline: 15px;
-}
-
 @media only screen and (min-width: 768px) {
 	.ia-headline-comp{
         padding-inline: 0px;
+    }
+
+    .ia-headline-comp.yes{
+        padding-inline: 39px;
     }
 }
