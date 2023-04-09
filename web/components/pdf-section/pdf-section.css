@@ -2,3 +2,13 @@
     margin-top: 16px;
     margin-bottom: 16p;
 }
+
+.ia-pdf-download{
+    margin-top: 16px;
+    margin-bottom: 32px;
+    display: block;
+}
+
+.ia-pdf-comp i{
+    margin-right: 8px;
+}
