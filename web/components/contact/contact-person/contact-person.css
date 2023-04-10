@@ -1,0 +1,51 @@
+.ia-contact-persons{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.ia-contact-persons .ia-contact-persons__title{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.ia-contact-persons p{
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.ia-contact-persons .ia-contact-persons__list{
+    margin-top: 16px;
+}
+
+.ia-contact-persons .ia-contact-persons__list .ia-contact-persons__list-item{
+    display: flex;
+    padding-left: 16px;
+    margin-top: 10px;
+}
+
+.ia-contact-persons .ia-contact-persons__list .ia-name{
+    flex-basis: 40%;
+    max-width: 200px;
+}
+
+.ia-contact-persons .ia-contact-persons__list .ia-tel{
+    flex-basis: 30%;
+    max-width: 250px;
+}
+
+.ia-contact-persons .ia-contact-persons__list .ia-email{
+    flex-basis: 30%;
+    max-width: 100px;
+}
+
+.ia-contact-persons .ia-contact-persons__title::after{
+    content: '';
+    display: block;
+    margin-inline: 0;
+    margin-top: 0.4 em;
+    height: 6px;
+    background: var(--gradient-color);
+    width: 100%;
+}

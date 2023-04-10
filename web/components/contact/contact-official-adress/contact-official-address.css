@@ -3,4 +3,10 @@
     border: 1px solid silver;
     padding: 32px;
     border-radius: 15px;
+    padding-top: 100px;
+    background-image: url('logo.png');
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-size: 200px;
+    background-position-x: left;
 }
