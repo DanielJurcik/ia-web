@@ -1,33 +1,20 @@
 <link rel="stylesheet" href="contact-person.css">
 <link rel="stylesheet" href="../../../style.css">
 
-
+<!-- IA - Contact person component - start -->
 <section class="ia-contact-persons">
-    <h3 class="ia-contact-persons__title">Metodický tím</h3>
-    <p>Kontakt : +421 2 20 431 417</p>
-    <p>mailové adresy: meno.priezvisko@ia.gov.sk</p>
+    <h3 class="ia-contact-persons__title">{{title}}</h3>
+    <p>{{textContent}}</p>
     <div class="ia-contact-persons__list">
         <!-- Item start -->
         <li class="ia-contact-persons__list-item">
-            <span class="ia-name">&#x25CF; Mgr. Peter Adam</span>
+            <span class="ia-name">&#x25CF; {{name}}</span>
+            <a class="ia-email" href="mailto:{{email}}">{{email}}</a>
             <span class="ia-tel">
-                <a href="tel:">0918 591 337</a>
+                <a href="tel:{{tel1}}">{{tel1}}</a>
                 <span> / </span>
-                <a href="tel:">0918 591 337</a>
+                <a href="tel:{{tel2}}">{{tel2}}</a>
             </span>
-            <a class="ia-email" href="mail">info@email.sk</a>
-        </li>
-        <!-- Item end -->
-
-        <!-- Item start -->
-        <li class="ia-contact-persons__list-item">
-            <span class="ia-name">&#x25CF; Mgr. Peter Adam</span>
-            <span class="ia-tel">
-                <a href="tel:">0918 591 337</a>
-                <span> / </span>
-                <a href="tel:">0918 591 337</a>
-            </span>
-            <a class="ia-email" href="mail">info@email.sk</a>
         </li>
         <!-- Item end -->
 
@@ -44,6 +31,9 @@
         <!-- Item end -->
     </div>
 </section>
+<!-- IA - Contact person component - end -->
+
+
 
 <section class="ia-contact-persons">
     <h3 class="ia-contact-persons__title">Metodický tím</h3>
