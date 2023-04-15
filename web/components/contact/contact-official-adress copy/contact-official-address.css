@@ -5,13 +5,14 @@
   border: 3px solid {{farba_projektu}};
   padding: 32px;
   border-radius: 15px;
-  padding-top: 48px;
+  padding-top: 120px;
+  background-image: url('{{obrazok}}');
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-size: 200px;
+  background-position-x: left;
 }
 
 .contact-section__official-adress .project-title{
-    margin-bottom: 32px;
-}
-
-.contact-section__official-adress .contact-title{
-  margin-bottom: 8px;  
+    color: {{farba_projektu}};
 }
