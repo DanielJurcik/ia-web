@@ -27,15 +27,19 @@
 }
 
 .ia-contact-persons .ia-contact-persons__list .ia-name{
-    flex-basis: 200px;
+    flex-basis: 250px;
+    padding-right: 16px;
 }
 
 .ia-contact-persons .ia-contact-persons__list .ia-tel{
-    flex-basis: 250px;
+    flex-basis: 330px;
+    padding-right: 16px;
+
 }
 
 .ia-contact-persons .ia-contact-persons__list .ia-email{
-    flex-basis: 100px;
+    flex-basis: 150px;
+    padding-right: 16px;
 }
 
 .ia-contact-persons .ia-contact-persons__title::after{
