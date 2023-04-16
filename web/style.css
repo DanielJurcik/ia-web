@@ -567,3 +567,11 @@ a{
 .date-box + .content .ia-headline-comp {
 	margin-top: 0;
 }
+
+#contact-page-contact-form .thm-btn{
+	background-color: var(--ia-primary-color);
+}
+
+.contact-content .contact-info li .icon-box .inner{
+	background: var(--ia-primary-color);
+}
