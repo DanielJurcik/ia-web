@@ -42,7 +42,8 @@
     content: '';
     display: block;
     margin-inline: 0;
-    margin-top: 0.4 em;
+    margin-top: 0.7em;
+    margin-bottom: 1em;
     height: 6px;
     background: var(--gradient-color);
     width: 100%;
