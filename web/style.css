@@ -567,3 +567,36 @@ a{
 .date-box + .content .ia-headline-comp {
 	margin-top: 0;
 }
+
+#contact-page-contact-form .thm-btn{
+	display: inline-block;
+	border: none;
+	margin: 0;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 15px;
+	line-height: 1;
+	cursor: pointer;
+	text-align: center;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	margin-top: 8px;
+	transition: 0.2s ease-in-out;
+	border-radius: 30px;
+	line-height: 19.5px;
+	padding: 7px 30px 7px 30px;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: var(--ia-primary-color);
+	border: 2px solid var(--ia-primary-color);
+	text-transform: capitalize
+}
+
+.contact-content .contact-info li .icon-box .inner{
+	background: var(--ia-primary-color);
+}
+
+#contact-page-contact-form .thm-btn:hover{
+	background-color: white;
+	color: var(--ia-primary-color);
+}

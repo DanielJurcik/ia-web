@@ -8,6 +8,11 @@
     display: inline-block;
     margin-bottom: 16px;
     font-weight: 600;
+    margin-bottom: 0;
+}
+
+.ia-contact-persons .ia-contact-persons__title-wrapper{
+    margin-bottom: 0;
 }
 
 .ia-contact-persons p{
@@ -21,29 +26,46 @@
 
 .ia-contact-persons .ia-contact-persons__list .ia-contact-persons__list-item{
     display: flex;
-    padding-left: 16px;
-    margin-top: 10px;
+    padding-left: 18px;
+    margin-bottom: 10px;
     flex-wrap: wrap;
 }
 
-.ia-contact-persons .ia-contact-persons__list .ia-name{
-    flex-basis: 200px;
+.ia-contact-persons .ia-contact-persons__list-position{
+    font-weight: 600;
+    margin-bottom: 4px;
+    margin-left: 4px;
 }
 
-.ia-contact-persons .ia-contact-persons__list .ia-tel{
+.ia-contact-persons .ia-contact-persons__list .ia-name{
     flex-basis: 250px;
+    padding-right: 16px;
+    position: relative;
+}
+
+.ia-contact-persons .ia-contact-persons__list .ia-name::before{
+    content: '•';
+    left: -10px;
+    position: absolute;
+}
+ 
+.ia-contact-persons .ia-contact-persons__list .ia-tel{
+    flex-basis: 330px;
+    padding-right: 16px;
+
 }
 
 .ia-contact-persons .ia-contact-persons__list .ia-email{
-    flex-basis: 100px;
+    flex-basis: 250px;
+    padding-right: 16px;
 }
 
 .ia-contact-persons .ia-contact-persons__title::after{
     content: '';
     display: block;
     margin-inline: 0;
-    margin-top: 0.7em;
-    margin-bottom: 1em;
+    margin-top: .3em;
+    margin-bottom: .5em;
     height: 6px;
     background: var(--gradient-color);
     width: 100%;
