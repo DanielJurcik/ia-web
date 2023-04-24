@@ -1,22 +1,42 @@
-.contact-section__official-adress{
+.ia-contact-section__official-adress{
     margin-top: 32px;
     margin-bottom: 32px;
+    overflow: hidden;
+    position: relative;
   background-color: white;
-  border: 3px solid {{farba_projektu}};
+  border: 2px solid {{farba_projektu}};
   padding: 32px;
   border-radius: 15px;
   padding-top: 48px;
-  background-image: url('{{obrazok}}');
+  /* background-image: url('{{obrazok}}');
   background-repeat: no-repeat;
   background-position-y: bottom;
   background-size: 750px;
-  background-position-x: right;
+  background-position-x: right; */
 }
 
-.contact-section__official-adress .project-title{
+.ia-contact-section__official-adress .project-title{
     margin-bottom: 32px;
 }
 
-.contact-section__official-adress .contact-title{
+.ia-contact-section__official-adress .contact-title{
   margin-bottom: 8px;  
+}
+
+.ia-contact-section__official-adress .contact-section__logo{
+  position: absolute;
+  right: -20px;
+  top: 15px;
+  width: 170px;
+  opacity: .3;
+}
+
+@media only screen and (min-width: 768px) {
+	.ia-contact-section__official-adress{
+    width: 85%;
+  }
+
+  .ia-contact-section__official-adress .contact-section__logo{
+    opacity: 1;
+  }
 }
