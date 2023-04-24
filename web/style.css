@@ -600,3 +600,8 @@ a{
 	background-color: white;
 	color: var(--ia-primary-color);
 }
+
+/** ODSTRANENIE ILUSTRACNEHO OBRAZKU PRI CLANKOCH */
+.blog-home .img-box{
+	display: none;
+}

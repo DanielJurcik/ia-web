@@ -1,6 +1,6 @@
 .ia-contact-persons{
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 .ia-contact-persons .ia-contact-persons__title{
@@ -27,7 +27,7 @@
 .ia-contact-persons .ia-contact-persons__list .ia-contact-persons__list-item{
     display: flex;
     padding-left: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
     flex-wrap: wrap;
 }
 
@@ -38,8 +38,8 @@
 }
 
 .ia-contact-persons .ia-contact-persons__list .ia-name{
-    flex-basis: 250px;
-    padding-right: 16px;
+    flex-basis: 350px;
+    padding-right: 24px;
     position: relative;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .ia-contact-persons .ia-contact-persons__list .ia-email{
-    flex-basis: 250px;
+    flex-basis: 350px;
     padding-right: 16px;
 }
 
