@@ -15,6 +15,10 @@ background-size: 750px;
 background-position-x: right; */
 }
 
+.ia-contact-section__official-adress .yes{
+display: none;
+}
+
 .ia-contact-section__official-adress .project-title{
   margin-bottom: 32px;
 }
@@ -26,14 +30,14 @@ margin-bottom: 8px;
 .ia-contact-section__official-adress .contact-section__logo{
 position: absolute;
 right: -20px;
-top: 35px;
-width: 170px;
+top: 50px;
+width: 150px;
 opacity: .3;
 }
 
 @media only screen and (min-width: 978px) {
 .ia-contact-section__official-adress{
-  width: 80%;
+  width: 90%;
 }
 
 .ia-contact-section__official-adress .contact-section__logo{
