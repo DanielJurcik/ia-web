@@ -1,0 +1,42 @@
+.ia-contact-section__official-adress{
+  margin-top: 32px;
+  margin-bottom: 32px;
+  overflow: hidden;
+  position: relative;
+background-color: white;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+padding: 32px;
+border-radius: 15px;
+padding-top: 48px;
+/* background-image: url('{{obrazok}}');
+background-repeat: no-repeat;
+background-position-y: bottom;
+background-size: 750px;
+background-position-x: right; */
+}
+
+.ia-contact-section__official-adress .project-title{
+  margin-bottom: 32px;
+}
+
+.ia-contact-section__official-adress .contact-title{
+margin-bottom: 8px;  
+}
+
+.ia-contact-section__official-adress .contact-section__logo{
+position: absolute;
+right: -20px;
+top: 35px;
+width: 170px;
+opacity: .3;
+}
+
+@media only screen and (min-width: 978px) {
+.ia-contact-section__official-adress{
+  width: 80%;
+}
+
+.ia-contact-section__official-adress .contact-section__logo{
+  opacity: 1;
+}
+}
