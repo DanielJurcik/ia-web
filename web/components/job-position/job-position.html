@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="job-position.css">
+<script src="job-position.js"></script>
+
+<div class="ia-date-hide-comp" data-endDate="{{date_end}}">
+    <p class="ia-date-hide-comp__time">Ponuka platná do : <b>{{date_end}}</b></p>
+    <div class="ia-job-position">
+        <div class="ia-job-position__text">
+            <h3>{{text|raw}}</h3>
+        </div>
+        <div class="ia-job-position__action">
+            <a class="ia-btn ia-btn-primary" href="{{button_link}}">{{button_text|raw}}</a>
+        </div>
+    </div>
+</div>
