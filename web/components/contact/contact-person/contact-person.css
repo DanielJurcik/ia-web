@@ -1,6 +1,7 @@
 .ia-contact-persons{
     margin-top: 32px;
     margin-bottom: 32px;
+    padding-inline: 16px;
 }
 
 .ia-contact-persons .ia-contact-persons__title{
@@ -69,4 +70,10 @@
     height: 6px;
     background: var(--gradient-color);
     width: 100%;
+}
+
+@media only screen and (min-width: 978px) {
+    .ia-contact-persons{
+        padding-inline: 0;
+    }
 }

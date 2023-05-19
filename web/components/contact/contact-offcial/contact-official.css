@@ -3,44 +3,48 @@
   margin-bottom: 32px;
   overflow: hidden;
   position: relative;
-background-color: white;
-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-padding: 32px;
-border-radius: 15px;
-padding-top: 48px;
-/* background-image: url('{{obrazok}}');
-background-repeat: no-repeat;
-background-position-y: bottom;
-background-size: 750px;
-background-position-x: right; */
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 32px;
+  border-radius: 15px;
+  padding-top: 48px;
 }
 
 .ia-contact-section__official-adress .yes{
-display: none;
-}
-
-.ia-contact-section__official-adress .project-title{
-  margin-bottom: 32px;
+  display: none;
 }
 
 .ia-contact-section__official-adress .contact-title{
-margin-bottom: 8px;  
+  margin-bottom: 32px;
 }
 
 .ia-contact-section__official-adress .contact-section__logo{
-position: absolute;
-right: -20px;
-top: 50px;
-width: 150px;
-opacity: .3;
+  position: absolute;
+  right: -20px;
+  top: 80px;
+  width: 195px;
+  opacity: .3;
+}
+
+.ia-contact-section__official-adress .add-info-text{
+  line-height: 2em;
 }
 
 @media only screen and (min-width: 978px) {
-.ia-contact-section__official-adress{
-  width: 90%;
+  .ia-contact-section__official-adress .contact-section__logo{
+    opacity: 1;
+  }
 }
 
-.ia-contact-section__official-adress .contact-section__logo{
-  opacity: 1;
+.ia-divider{
+  margin-top: 16px;
+  margin-bottom: 16px;
+  width: 20%;
+  height: 8px;
+  background: var(--gradient-color);
 }
+
+.ia-divider__wrapper{
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
