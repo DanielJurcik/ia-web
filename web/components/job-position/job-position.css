@@ -42,6 +42,7 @@
 .ia-no-jobs-msg{
     margin-left: 20px;
     font-size: 20px;
+    font-style: italic;
 }
 
 @media (max-width: 768px) {

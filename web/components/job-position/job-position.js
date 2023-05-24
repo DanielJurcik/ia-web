@@ -1,4 +1,4 @@
-const noJobsMsg = `V súčasnosti nemáme voľné pozície. V prípade záujmu o zaradenie do evidencie môžete poslať mail na <a href='mailto:karieraia.gov.sk'>karieraia.gov.sk</a>`;
+const noJobsMsg = `Aktuálne nie sú k dispozícii žiadne voľné pozície. Ich ponuku priebežne aktualizujeme.`;
 //Selectors
 const dateHideCompSele = '.ia-date-hide-comp';
 const dateHideStartDateAtt = 'data-startDate';
