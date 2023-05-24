@@ -1,0 +1,8 @@
+.ia-btn-wrapper{
+    display: flex;  
+}
+
+.ia-btn-comp{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
