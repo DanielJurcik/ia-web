@@ -131,6 +131,8 @@ a.ia-btn, .ia-btn{
 	padding: 7px 30px 7px 30px;
 	font-weight: bold;
 	text-decoration: none;
+	letter-spacing: 0.8px;
+	font-family: Roboto;
 }
 
 .ia-btn.ia-btn-primary {
@@ -607,23 +609,40 @@ a{
 }
 
 /** SCROLL UP BUTTON  */
-.ia-scroll-up{
+a.ia-scroll-up{
     --offset: 50px; 
   
-    position: sticky;
-    bottom: 20px;      
+    position: fixed;  
+    /*
     margin-right:10px; 
     place-self: end;
     margin-top: calc(100vh + var(--offset));
+    */
     
     /* visual styling */
     text-decoration: none;
     padding: 10px;
     font-family: sans-serif;
-    color: #fff;
-    background: #000;
     border-radius: 100px;
     white-space: nowrap;
+    left: 14px;
+    bottom: 14px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none !important;
+    background: var(--background-light-color);
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    opacity: .6;
+    transition: opacity .4s ease-in-out;
+}
+
+a.ia-scroll-up:hover{
+    opacity: 1;
 }
 
 body,html{
