@@ -47,6 +47,10 @@ html{
 	opacity: 0.6;
 }
 
+.elementor-widget-slider_revolution{
+	z-index: 5;
+}
+
 /*******************************/
 /* FB ikona v sekundárnom menu */
 /*******************************/
