@@ -19,6 +19,7 @@
 .ia-contact-persons p{
     margin: 0;
     margin-bottom: 8px;
+    font-weight: 400;
 }
 
 .ia-contact-persons .ia-contact-persons__list{
@@ -30,6 +31,7 @@
     padding-left: 18px;
     margin-bottom: 16px;
     flex-wrap: wrap;
+    font-weight: 400;
 }
 
 .ia-contact-persons .ia-contact-persons__list-position{

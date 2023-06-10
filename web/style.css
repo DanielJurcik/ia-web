@@ -621,14 +621,13 @@ a.ia-scroll-up{
     
     /* visual styling */
     text-decoration: none;
-    padding: 10px;
+    padding: 12px;
     font-family: sans-serif;
     border-radius: 100px;
     white-space: nowrap;
-    left: 14px;
+    right: 14px;
     bottom: 14px;
-    width: 40px;
-    height: 40px;
+    width: 48px;
     display: block;
     display: flex;
     justify-content: center;
@@ -637,14 +636,52 @@ a.ia-scroll-up{
     background: var(--background-light-color);
     color: black;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    opacity: .6;
+    opacity: .8;
     transition: opacity .4s ease-in-out;
+    flex-direction: column;
+	z-index: 4;
 }
 
 a.ia-scroll-up:hover{
     opacity: 1;
 }
 
+a.ia-scroll-up i{
+	transition: 0.4s ease-in-out;
+}
+
+a.ia-scroll-up:hover i{
+    transform: translatey(-2px)
+}
+
+a.ia-scroll-up .ia-scroll-up__logo{
+		margin-top: 8px;
+    width: 50px;
+}
+
 body,html{
 	scroll-behavior: smooth;
+}
+
+
+/* SCROLL UP BUTTON - end */
+
+/* CONTACT FORMULAR */
+.contact-content .contact-info li .icon-box .inner{
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+}
+
+.contact-content .contact-info li{
+	margin-bottom: 8px;
+}
+
+.premium-blog-post-container.premium-blog-skin-modern .premium-blog-content-wrapper{
+	z-index: 0;
+}
+/* Nastavenie Min-height pre stranku (kvoli footeru) */
+[data-elementor-type="wp-page"]{
+	min-height: calc(100vh - 805px);
 }
