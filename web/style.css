@@ -466,14 +466,7 @@ h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5{
 
 .elementor-widget-container .premium-blog-pagination-container .page-numbers{
 	font-family: "Roboto", sans-serif !important;
-	background: var(--gradient-color) !important;
 	transition: 0 !important;
-}
-
-.elementor-widget-container .premium-blog-pagination-container .page-numbers:hover,
-.elementor-widget-container .premium-blog-pagination-container .page-numbers.current
-{
-	background: var(--secondary-color) !important;
 }
 
 .elementor-button-wrapper .elementor-button-link.elementor-button,
