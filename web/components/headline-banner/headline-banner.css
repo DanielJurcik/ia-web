@@ -1,0 +1,29 @@
+.ia-image-banner{
+    background-size: cover;
+    position: relative;
+    background: var(--gradient-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Odostup */
+    margin-top: 32px;
+    margin-bottom: 32px;
+    min-height: 164px;
+}
+
+.ia-image-banner .ia-image-banner__title{
+    font-weight: 700;
+    padding: 24px;
+    font-size: 40px;
+    text-align: center;
+    z-index: 1;
+      color: white;
+    margin-bottom: 0;
+}
+
+@media (min-width: 600px) {
+    .ia-image-banner .ia-image-banner__title{
+        padding: 32px;
+        font-size: 56px;
+    }
+}
