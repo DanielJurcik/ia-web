@@ -1,0 +1,16 @@
+.ia-divider{
+    width: {{width}}%;
+    height: 10px;
+    background: var(--gradient-color);
+}
+
+.ia-divider__wrapper{
+    display: flex;
+    justify-content: {{zarovnanie}};
+}
+
+@media (max-width: 768px) {
+    .ia-divider{
+        width: {{mobile_width}}%;
+    }
+}

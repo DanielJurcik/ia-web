@@ -1,0 +1,72 @@
+.ia-about-us{
+    color: var(--text-color);
+    padding-top: 56px;
+    padding-bottom: 56px;
+    padding-inline: 12px;
+}
+
+.ia-about-us .ia-about-us__wrapper{
+    background: var(--background-light-color);
+    padding-inline: 18px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 30px;
+}
+
+.ia-about-us .ia-about-us__text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ia-about-us .ia-about-us__image{
+    border-radius: 50%;
+    max-width: 380px;
+    height: 380px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 32px;
+    aspect-ratio: 1 / 1;
+    height: max-content;
+}
+
+.ia-about-us .ia-about-us__image-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ia-about-us .ia-about-us__title{
+    font-size: 56px;
+    margin-bottom: 8px;
+    margin-top: 0px;
+}
+
+.ia-about-us .ia-about-us__text{
+    margin: 0px;
+}
+
+.ia-about-us .ia-btn-primary{
+    margin-top: 24px;
+}
+
+.ia-about-us .ia-about-us__subtitle{
+    margin: 0;
+    font-size: 24px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+    .ia-about-us .ia-about-us__wrapper{
+        padding-inline: 80px;
+    }
+
+    .ia-about-us{
+        padding-inline: 0;
+    }
+
+    .ia-about-us__image{
+        margin-bottom: 0;
+    }
+} 

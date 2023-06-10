@@ -22,6 +22,10 @@
 	--ia-primary-color: #E60000;
 }
 
+html{
+	overflow-x: hidden;
+}
+
 /*****************************/
 /*  Custom vyrez pre slider  */
 /*****************************/
@@ -41,6 +45,10 @@
 	background-position-x: right;
 	background-size: contain;
 	opacity: 0.6;
+}
+
+.elementor-widget-slider_revolution{
+	z-index: 5;
 }
 
 /*******************************/
@@ -529,13 +537,12 @@ h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5{
 	align-items: center;
 }
 
-
-.faq-home .accrodion .accrodion-title h4 span.decor{
-	
-}
-
 .elementor-widget-charityhome_faqs .accrodion-title h4 .text{
 	display: block;
+}
+
+[data-elementor-type="footer"] .elementor-container.elementor-column-gap-default{
+	padding-inline: 12px;
 }
 
 /*****************************/
