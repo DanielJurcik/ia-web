@@ -16,8 +16,15 @@
 	--white-color: #FFFFFF;
 	--black-color: #000000;
     
+    /* Žltá k červenej */
     --gradient-color: linear-gradient(340deg, var(--ia-primary-color) 15%, var(--secondary-color) 100%);
+
+    /* Červená k žltej */
     --gradient-color-45:linear-gradient(45deg, rgba(230,0,0,1) 0%, rgba(230,191,0,1) 100%);
 
     --ia-primary-color: #E60000;
+
+    --ia-border-radius: 8px;
+    --ia-border-radius-m: 16px;
+    --ia-border-radius-xl: 32px;
 }
