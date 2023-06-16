@@ -464,9 +464,53 @@ h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5{
 	color: var(--ia-primary-color) !important;
 }
 
+/* HAVE ARROW LINKS POST - new design - START */
+.have-arrow-links .premium-blog-wrap .premium-blog-excerpt-link-wrap .premium-blog-excerpt-link.elementor-button{
+	border: none !important;
+	padding-left: 0 !important;
+}
+
+.have-arrow-links .premium-blog-wrap .premium-blog-excerpt-link-wrap .premium-blog-excerpt-link.elementor-button:hover{
+	background: none !important;
+	color: var(--ia-primary-color) !important;
+	text-shadow: .5px 0 0 var(--ia-primary-color);
+}
+
+.have-arrow-links .premium-blog-wrap .elementor-button::after{
+	content: '\27F6';
+	font-weight: 600;
+	padding-left: 8px;
+	transition: padding .4s ease-in-out;
+}
+
+.have-arrow-links .premium-blog-wrap .elementor-button:hover::after{
+	padding-left: 16px;
+}
+
+.have-arrow-links .premium-blog-even .premium-blog-excerpt-link-wrap{
+	display: block;
+}
+
+.have-arrow-links .premium-blog-even .premium-blog-content-wrapper{
+	display: block;
+}
+
+.have-arrow-links .premium-blog-entry-title a{
+	text-decoration: none !important;
+}
+
+@media (min-width:768px){
+	.have-arrow-links .premium-blog-entry-title{
+		width: 80%;
+	}
+}
+/* HAVE ARROW LINKS POST - new design - END */
+
+
 .elementor-widget-container .premium-blog-pagination-container .page-numbers{
 	font-family: "Roboto", sans-serif !important;
 	transition: 0 !important;
+	text-decoration: none !important;
 }
 
 .elementor-button-wrapper .elementor-button-link.elementor-button,
