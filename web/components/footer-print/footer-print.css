@@ -1,0 +1,32 @@
+.elementor-location-footer{
+    display: none;
+}
+
+.ia-footer-print{
+    /* border-top: 3px solid var(--text-color); */
+    margin-top: 40px;
+    /* background-color: #dadadc; */
+    color: var(--text-color)
+}
+
+.ia-footer-print a{
+    color: var(--text-color) !important;
+    text-decoration: none !important;
+}
+
+.ia-text-right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ia-footer-print .footer-black{
+    margin-top: 32px;
+    /* background-color: #262F36; */
+    padding-top: 24px;
+    padding-bottom: 16px;
+}
+
+.ia-footer-print .footer-container{
+    padding-top: 50px;
+    border-top: 1px solid #dadadc;
+}

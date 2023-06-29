@@ -1,0 +1,31 @@
+.ia-image-item-2{
+    position: relative;
+    margin-top: 32px;
+    height: 100%;
+}
+
+.ia-image-item-2 .ia-image-item__title-wrapper{
+    box-sizing: border-box;
+    width: 100%;
+    background: #F8F8F8;
+    padding-bottom: 24px;
+    text-align: center;
+    border-radius: 15px;
+    padding-inline: 24px;
+    padding-top: 24px;
+}
+
+.ia-image-item-2 .ia-image-item__title{
+    font-size: 28px;
+    margin: 0;
+    font-weight: 700;
+    color: var(--headline-color);
+    font-size: 22px;
+    line-height: 1.4em;
+}
+
+.ia-image-item-2 .ia-image-item__text{
+    color: var(--text-color);
+    margin-top: 8px;
+    margin-bottom: 0;
+}

@@ -23,7 +23,7 @@ hideElems.forEach(element => {
 });
 
 // If there are no avaiable jobs then it will append message
-if((!document.querySelector(noJobsElemClass)) && (!haveActiveJobs)) {
+if((!document.querySelector(`.${noJobsElemClass}`)) && (!haveActiveJobs)) {
     let noJobsMsgElem = document.createElement('p');
     noJobsMsgElem.classList.add(noJobsElemClass)
     noJobsMsgElem.innerHTML = noJobsMsg;

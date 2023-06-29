@@ -506,11 +506,74 @@ h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5{
 }
 /* HAVE ARROW LINKS POST - new design - END */
 
+/* ----------------------------- */
+/* GLOBAL POSTS SETTING - start  */
+/* ----------------------------- */
+
+.premium-blog-wrap .premium-blog-skin-side .premium-blog-entry-title a{
+	font-size: 20px !important;
+	text-decoration: none !important;	
+}
+
+
+
+.premium-blog-wrap .premium-blog-entry-title a{
+	text-decoration: none !important;	
+}
+
+.premium-blog-wrap .premium-blog-entry-title{
+	margin-bottom: 12px !important;
+}
+
+.premium-blog-wrap .premium-blog-excerpt-link-wrap{
+	justify-content: flex-start;
+}
+
+.premium-blog-wrap .premium-blog-excerpt-link-wrap .elementor-button::after{
+	content: '\27F6';
+	font-weight: 600;
+	padding-left: 8px;
+	transition: padding .4s ease-in-out;
+}
+.premium-blog-wrap .premium-blog-excerpt-link-wrap .premium-blog-excerpt-link.elementor-button{
+	border: none !important;
+	padding-left: 0 !important;
+}
+
+.premium-blog-wrap .elementor-button:hover::after{
+	padding-left: 16px;
+}
+
+.premium-blog-wrap .premium-blog-excerpt-link-wrap .premium-blog-excerpt-link.elementor-button:hover{
+	background: none !important;
+	color: var(--ia-primary-color) !important;
+	text-shadow: .5px 0 0 var(--ia-primary-color);
+}
+
+/* ----------------------------- */
+/* GLOBAL POSTS SETTING - end    */
+/* ----------------------------- */
+
 
 .elementor-widget-container .premium-blog-pagination-container .page-numbers{
 	font-family: "Roboto", sans-serif !important;
 	transition: 0 !important;
 	text-decoration: none !important;
+	background-color: transparent !important;
+	color: var(--text-color) !important;
+	border-radius: 5px;
+}
+
+.elementor-widget-container .premium-blog-pagination-container .page-numbers:hover,
+.elementor-widget-container .premium-blog-pagination-container span.current
+{
+	background-color: var(--ia-primary-color) !important;
+	color: var(--white-color) !important;
+}
+
+.premium-blog-pagination-container{
+	display: flex;
+	justify-content: center;
 }
 
 .elementor-button-wrapper .elementor-button-link.elementor-button,
@@ -728,4 +791,8 @@ body,html{
 /* Nastavenie Min-height pre stranku (kvoli footeru) */
 [data-elementor-type="wp-page"]{
 	min-height: calc(100vh - 805px);
+}
+
+.single-blog-post .content-box .content h3{
+	text-transform: unset;
 }
