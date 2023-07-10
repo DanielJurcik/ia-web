@@ -7,10 +7,12 @@
     padding: 8px;
     align-items: center;
     border-radius: 15px;
+    margin-bottom: 16px;
+    margin-top: 16px;
 }
 
 .ia-cta-btn-hide-comp .ia-btn-wrapper{
-    margin-right: -170px;
+    /* margin-right: -170px; */
     transition: margin .4s ease-in-out;
 }
 
