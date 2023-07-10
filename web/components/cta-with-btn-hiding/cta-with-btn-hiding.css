@@ -1,0 +1,27 @@
+.ia-cta-btn-hide-comp{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    border-left: 6px solid var(--ia-primary-color);
+    padding: 8px;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.ia-cta-btn-hide-comp .ia-btn-wrapper{
+    margin-right: -170px;
+    transition: margin .4s ease-in-out;
+}
+
+.ia-cta-btn-hide-comp .ia-cta-btn-hide-comp__title{
+    margin: 0;
+}
+
+.ia-cta-btn-hide-comp button{
+    margin: 0;
+}
+
+.ia-cta-btn-hide-comp:hover .ia-btn-wrapper{
+    margin-right: 0px;
+}
