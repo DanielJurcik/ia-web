@@ -175,6 +175,24 @@ a.ia-btn, .ia-btn{
 	outline-offset: -4px;
 }
 
+
+.ia-btn.ia-btn-arrow{
+	background-color: transparent;
+	padding-left: 0 !important;
+	color: var(--ia-primary-color);
+}
+
+.ia-btn-arrow::after{
+	content: '\27F6';
+	font-weight: 600;
+	padding-left: 8px;
+	transition: padding .4s ease-in-out;
+}
+
+.ia-btn-arrow:hover::after{
+	padding-left: 16px;
+}
+
 /*****************************/
 /*        AKTUALITY          */
 /*****************************/
