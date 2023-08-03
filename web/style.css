@@ -579,7 +579,7 @@ h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5{
 	text-decoration: none !important;
 	background-color: transparent !important;
 	color: var(--text-color) !important;
-	border-radius: 5px;
+	border-radius: 5px !important;
 }
 
 .elementor-widget-container .premium-blog-pagination-container .page-numbers:hover,
