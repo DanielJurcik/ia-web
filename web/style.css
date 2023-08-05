@@ -582,6 +582,19 @@ h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5{
 	border-radius: 5px !important;
 }
 
+/* PAGINATION - Text pre desktop a tablet */
+@media (min-width:768px){
+	.premium-blog-pagination-container .page-numbers.next::before{
+		content: 'Ďalšia';
+		font-weight: normal;
+	}
+	
+	.premium-blog-pagination-container .page-numbers.prev::after{
+		content: 'Predchadzajúca';
+		font-weight: normal;
+	}
+}
+
 .elementor-widget-container .premium-blog-pagination-container .page-numbers:hover,
 .elementor-widget-container .premium-blog-pagination-container span.current
 {
