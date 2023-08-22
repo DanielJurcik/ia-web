@@ -1,0 +1,11 @@
+.ia-tooltip{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: aqua;
+    display: none;
+    padding: 12px;
+    font-size: 16px;
+}
