@@ -175,6 +175,24 @@ a.ia-btn, .ia-btn{
 	outline-offset: -4px;
 }
 
+
+.ia-btn.ia-btn-arrow{
+	background-color: transparent;
+	padding-left: 0 !important;
+	color: var(--ia-primary-color);
+}
+
+.ia-btn-arrow::after{
+	content: '\27F6';
+	font-weight: 600;
+	padding-left: 8px;
+	transition: padding .4s ease-in-out;
+}
+
+.ia-btn-arrow:hover::after{
+	padding-left: 16px;
+}
+
 /*****************************/
 /*        AKTUALITY          */
 /*****************************/
@@ -561,7 +579,20 @@ h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5{
 	text-decoration: none !important;
 	background-color: transparent !important;
 	color: var(--text-color) !important;
-	border-radius: 5px;
+	border-radius: 5px !important;
+}
+
+/* PAGINATION - Text pre desktop a tablet */
+@media (min-width:768px){
+	.premium-blog-pagination-container .page-numbers.next::before{
+		content: 'Ďalšia';
+		font-weight: normal;
+	}
+	
+	.premium-blog-pagination-container .page-numbers.prev::after{
+		content: 'Predchadzajúca';
+		font-weight: normal;
+	}
 }
 
 .elementor-widget-container .premium-blog-pagination-container .page-numbers:hover,
