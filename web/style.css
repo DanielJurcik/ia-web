@@ -2,24 +2,32 @@
 /*          FARBY            */
 /*****************************/
 :root {
-	--primary-color: #E60000;
-	--secondary-color: #E6BF00;
-	--third-color: #404040;
+    --primary-color: #E60000 !important;
+    --secondary-color: #E6BF00 !important;
+    --third-color: #404040;
 
-	--grey-color:#E8E8E880;
+    --grey-color:#E8E8E880;
 
-	--text-color: #444444;
-	--headline-color: #303133;
+    --text-color: #222;
+    --headline-color: #222;
 
-	--background-light-color: #E8E8E880;
+    --background-light-color: #E8E8E880;
 
 	--white-color: #FFFFFF;
 	--black-color: #000000;
-	
-	--gradient-color: linear-gradient(340deg, var(--ia-primary-color) 15%, var(--secondary-color) 100%);
-	--gradient-color-45:linear-gradient(45deg, rgba(230,0,0,1) 0%, rgba(230,191,0,1) 100%);
+    
+    /* Žltá k červenej */
+    --gradient-color: linear-gradient(340deg, var(--ia-primary-color) 15%, var(--secondary-color) 100%);
 
-	--ia-primary-color: #E60000;
+    /* Červená k žltej */
+    --gradient-color-45:linear-gradient(45deg, rgba(230,0,0,1) 0%, rgba(230,191,0,1) 100%);
+
+    --ia-primary-color: #E60000;
+    --ia-secondary-color: #E6BF00;
+
+    --ia-border-radius: 8px;
+    --ia-border-radius-m: 16px;
+    --ia-border-radius-xl: 32px;
 }
 
 html{
