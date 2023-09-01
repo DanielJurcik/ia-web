@@ -1,0 +1,23 @@
+{
+  "name": "ia-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch web/scss -o web/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielJurcik/ia-web.git"
+  },
+  "author": "Daniel Jurcik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielJurcik/ia-web/issues"
+  },
+  "homepage": "https://github.com/DanielJurcik/ia-web#readme",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
