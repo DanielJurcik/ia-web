@@ -2,10 +2,15 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 200px;
-    height: 200px;
-    background: aqua;
+    min-width: 50px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background: white;
+	border-radius: 5px;
     display: none;
     padding: 12px;
     font-size: 16px;
+
+    p{
+        margin: 0;
+    }
 }
