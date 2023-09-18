@@ -1,5 +1,15 @@
 .elementor-location-footer{
     display: none;
+
+}
+
+.single-blog-post{
+    margin-bottom: 0 !important; 
+    padding-bottom: 0 !important;
+}
+
+.sec-padding{
+    padding: 0;
 }
 
 .ia-footer-print{
