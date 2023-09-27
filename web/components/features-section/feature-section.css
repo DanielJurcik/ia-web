@@ -1,0 +1,18 @@
+.ia-features-section{
+    padding: 16px;
+}
+
+.ia-features-section a{
+    text-decoration: none !important;
+}
+
+@media (min-width: 600px) {
+    .ia-features-section{
+    }
+}
+
+@media (min-width: 900px) {
+    .ia-features-section{
+        padding: 0px;
+    }
+}
