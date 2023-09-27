@@ -12,3 +12,7 @@
 .ia-pdf-comp i{
     margin-right: 8px;
 }
+
+.ia-pdf-comp .ia-pdf-download{
+    color: var(--text-color);
+}
