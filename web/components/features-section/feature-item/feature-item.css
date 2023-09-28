@@ -4,8 +4,17 @@
     height: 100%;
 }
 
+.ia-image-item .more-info-icon{
+    display: none;
+    color: var(--ia-primary-color);
+    font-size: 18px;
+    margin-left: 8px;
+}
+
+
 .ia-image-item:hover .ia-image-item__image{
-    border: 8px solid white;
+    transform: scale(1.1);
+    outline: 8px white solid;
 }
 
 .ia-image-item .ia-image-item__image-wrapper{
@@ -16,11 +25,56 @@
 
 .ia-image-item .ia-image-item__image{
     border-radius: 50%;
-    width: 144px;
-    height: 144px;
+    width: 124px;
+    height: 124px;
     object-fit: cover;
-    border: 14px solid white;
-    transition: border 0.2s ease-in-out;
+    outline: 14px white solid;
+    transition: 0.2s ease-in-out;
+}
+
+.ia-image-item.more-info-yes{
+    /* border: 3px solid var(--ia-primary-color); */
+}
+
+.ia-image-item .more-info-text{
+    display: none;
+    height: 0px;
+    position: absolute;
+    background-color: rgb(230, 230, 230);
+    padding: 8px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: 0.4s ease-in-out;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.ia-image-item .more-info-text p{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.ia-image-item .more-info-text .more-info-icon{
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.ia-image-item.more-info-yes:hover .more-info-text{
+    height: 100px;
+    height: auto;
+    display: flex;
+}
+
+.ia-image-item.more-info-yes .ia-image-item__title-wrapper{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.ia-image-item.more-info-yes .more-info-icon{
+    display: block;
 }
 
 .ia-image-item .ia-image-item__title-wrapper{
@@ -28,7 +82,7 @@
     width: 100%;
     background: #F8F8F8;
     padding-top: 72px;
-    padding-bottom: 32px;
+    padding-bottom: 48px;
     text-align: center;
     border-radius: 15px;
     padding-inline: 24px;
@@ -42,6 +96,9 @@
     color: var(--headline-color);
     font-size: 22px;
     line-height: 1.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ia-image-item .ia-image-item__text{

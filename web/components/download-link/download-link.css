@@ -10,7 +10,7 @@
 
 .underline{
     position: relative;
-    color: var(--text-color);
+    color:  var(--ia-primary-color);
   }
   
   .underline::before{
