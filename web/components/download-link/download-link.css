@@ -1,33 +1,41 @@
 .ia-download-link{
-    margin-top: 8px;
-    margin-bottom: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.ia-download-link li{
+list-style: none;
 }
 
 .ia-download-link a{
-    text-decoration: none !important;
-    font-weight: 400;
+  text-decoration: none !important;
+  font-weight: 400;
 }
 
 .underline{
-    position: relative;
-    color:  var(--ia-primary-color);
+  position: relative;
+  color:  var(--ia-primary-color);
+}
+
+/* .underline::before{
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  right: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--ia-primary-color);
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+} */
+
+/* @media (hover: hover) and (pointer: fine) {
+  .underline:hover::before{
+    left: 0;
+    right: auto;
+    width: 100%;
   }
-  
-  .underline::before{
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    right: 0;
-    width: 0;
-    height: 3px;
-    background-color: var(--ia-primary-color);
-    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-  }
-  
-  @media (hover: hover) and (pointer: fine) {
-    .underline:hover::before{
-      left: 0;
-      right: auto;
-      width: 100%;
-    }
-  }
+} */
+
+.ia-download-link a:hover{
+  border-bottom: 3px solid var(--ia-primary-color);
+}
