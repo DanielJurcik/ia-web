@@ -1,5 +1,10 @@
 <div class="ia-btn-wrapper" style="justify-content: {{zarovnanie}};">
     <a href="{{link}}">
-        <button style="margin-top:{{margin_top}}px; margin-bottom: {{margin_bottom}}px" class="ia-btn-comp ia-btn ia-btn-{{type}}">{{button_text|raw}}</button>
+        <button 
+            style="margin-top:{{margin_top}}px; margin-bottom: {{margin_bottom}}px" 
+            class="ia-btn-comp ia-btn ia-btn-{{type}}">
+            <img class="ia-btn-icon" src="/wp-content/uploads/2023/11/{{icon_custom}}.png" alt="">
+            {{button_text|raw}}
+        </button>
     </a>
 </div>

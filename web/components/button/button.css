@@ -2,7 +2,20 @@
     display: flex;  
 }
 
-.ia-btn-comp{
+.ia-btn-wrapper a{
+    text-decoration: none !important;
+}
+
+.ia-btn-comp.ia-btn{
     margin-top: 16px;
     margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ia-btn-icon{
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
 }
