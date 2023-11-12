@@ -107,6 +107,8 @@
 } */
 
 .ia-image-item.more-info-yes .ia-image-item__title-wrapper{
-    background-image: url("/wp-content/uploads/2023/10/icon_bcg.png");
-    background-size: cover;
+    background-image: url("/wp-content/uploads/2023/11/icon_bcg_new.png");
+    background-size: contain;
+  	background-position: top right;
+  	background-repeat: no-repeat;
 }
