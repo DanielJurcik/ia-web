@@ -14,8 +14,12 @@
     align-items: center;
 }
 
-.ia-btn-icon{
-    width: 16px;
+.ia-btn .ia-btn-icon{
+    width: auto;
+    max-width: 16px;
     height: 16px;
-    margin-right: 8px;
+}
+
+.ia-btn .ia-btn-text{
+    margin-inline: 8px;
 }

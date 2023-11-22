@@ -1,6 +1,7 @@
 .ia-download-link{
   margin-top: 8px;
   margin-bottom: 8px;
+  padding-inline: 16px;
 }
 
 .ia-download-link li{
@@ -37,5 +38,11 @@ list-style: none;
 } */
 
 .ia-download-link a:hover{
-  border-bottom: 3px solid var(--ia-primary-color);
+  border-bottom: 2px solid var(--ia-primary-color);
+}
+
+@media only screen and (min-width: 978px){ 
+  .ia-download-link {
+    padding-inline: 0;
+  }
 }
