@@ -1,4 +1,4 @@
-<a href="{{item.link}}" class="col-12 col-md-6 col-lg-4">
+<div class="col-12 col-md-6 col-lg-4">
     <article class="ia-image-item more-info-{{item.more_info}}">
         <div class="ia-image-item__image-wrapper">
             <img class="ia-image-item__image" src="{{item.image}}" alt="">
@@ -6,9 +6,15 @@
         <div class="ia-image-item__title-wrapper">
             <h3 class="ia-image-item__title">{{item.title}}</i></h3>
             <p class="ia-image-item__text">{{item.text}}</p>
+       		<details>
+  <summary>Details</summary>
+  Something small enough to escape casual notice.
+</details>
         </div>
+ 
+
         <div class="more-info-text">
             <p><i class="fa fa-info-circle more-info-icon"></i> {{item.more_info_text|raw}}</p>
         </div>
     </article>
-</a>
+</div>

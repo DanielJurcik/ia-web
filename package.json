@@ -19,5 +19,8 @@
   "homepage": "https://github.com/DanielJurcik/ia-web#readme",
   "dependencies": {
     "node-sass": "^9.0.0"
+  },
+  "devDependencies": {
+    "prettier": "3.4.2"
   }
 }
