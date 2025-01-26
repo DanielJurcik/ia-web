@@ -40,7 +40,6 @@
 
 .ia-image-item .more-info-text p{
     display: flex;
-    align-items: center;
     margin: 0;
     color: var(--text-color);
 }
@@ -57,6 +56,11 @@
     display: flex;
     z-index: 2;
 }
+
+.ia-image-item.more-info-yes:hover .arrow-down{
+    transform: rotateX(180deg);
+}
+
 
 .ia-image-item.more-info-yes .ia-image-item__title-wrapper{
     border-bottom-left-radius: 0;
@@ -106,9 +110,15 @@
       }
 } */
 
-.ia-image-item.more-info-yes .ia-image-item__title-wrapper{
-    background-image: url("/wp-content/uploads/2023/11/icon_bcg_new.png");
-    background-size: contain;
-  	background-position: top right;
-  	background-repeat: no-repeat;
+.ia-image-item .arrow-down{
+    display: none;
+    width: 32px;
+    height: 22px;
+    transition: all 2s ease-in-out .5s;
+    margin: 0 auto;
 }
+
+.ia-image-item.more-info-yes .arrow-down{
+    display: block;
+}
+
