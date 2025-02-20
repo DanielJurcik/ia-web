@@ -13,8 +13,9 @@
 
   --background-light-color: #E8E8E880;
 
---white-color: #FFFFFF;
---black-color: #000000;
+  /* Čierna a biela */
+  --white-color: #FFFFFF;
+  --black-color: #000000;
   
   /* Žltá k červenej */
   --gradient-color: linear-gradient(340deg, var(--ia-primary-color) 15%, var(--secondary-color) 100%);
@@ -28,6 +29,16 @@
   --ia-border-radius: 8px;
   --ia-border-radius-m: 16px;
   --ia-border-radius-xl: 32px;
+
+  /* Elementor override - pre editor */
+  --e-p-border-con: var(--primary-color);
+  --e-p-border-section: var(--primary-color);
+  --e-p-border-section-hover: var(--primary-color);
+  --e-p-border-con-hover: var(--primary-color);
+  --e-p-draggable-color: var(--primary-color);
+  --e-p-border-widget: var(--primary-color);
+  --e-p-border-widget-hover: var(--primary-color);
+  --e-p-border-widget-invert: var(--white-color);
 }
 
 html{
@@ -855,5 +866,9 @@ margin: 0;
 
 html .elementor-top-section .elementor-element-6765ffd .elementor-widget-container img{
 height: 70px;
+}
+
+.hp-main-banner{
+	overflow: hidden;
 }
 
