@@ -70,6 +70,8 @@ if ( class_exists( '\Elementor\Plugin' ) && $data->get( 'tpl-type' ) == 'e') {
                                     <div class="date">
                                         <b><?php echo get_the_date('d'); ?></b>
 										<?php echo get_the_date('M'); ?>
+                                        <hr>
+                                        <?php echo get_the_date('Y'); ?>
                                     </div>
                                     <div class="comment">
                                         <i class="flaticon-interface-1"></i> <?php comments_number( wp_kses(__('0' , 'charityhome'), true), wp_kses(__('1' , 'charityhome'), true), wp_kses(__('%' , 'charityhome'), true)); ?>
