@@ -1,0 +1,13 @@
+.projekt-buble{
+    justify-content: center;
+    margin-block: 16px;
+}
+
+.projekt-buble__text-wrapper{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 10px;
+    padding-inline: 24px;
+    padding-block: 8px;
+    width: fit-content;
+}

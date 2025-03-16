@@ -20,6 +20,7 @@
     margin: 0;
     margin-bottom: 8px;
     font-weight: 400;
+    color: var(--text-color);
 }
 
 .ia-contact-persons .ia-contact-persons__list{
@@ -44,6 +45,7 @@
     flex-basis: 350px;
     padding-right: 24px;
     position: relative;
+    color: var(--headline-color);
 }
 
 .ia-contact-persons .ia-contact-persons__list .ia-name::before{
